@@ -42,6 +42,7 @@ let getResponse = async function (url, referrer) {
     await sleep(0.5);
     let response = await fetch(url, {
         method: "GET",
+        // не защищаются вообще, не будем усложнять
         // headers: {
         //     "Content-Type": "application/json",
         // },
